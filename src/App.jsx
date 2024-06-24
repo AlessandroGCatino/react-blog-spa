@@ -15,7 +15,7 @@ function App() {
               <Route index element={<HomePage/>} />
               <Route path="posts">
                   <Route index element={<IndexPage/>}/>
-                  <Route path=":id">
+                  <Route path=":slug">
                       <Route index element={<ShowPost/>}/>
                   </Route>
                   <Route path="create" element={<CreatePost/>}/>

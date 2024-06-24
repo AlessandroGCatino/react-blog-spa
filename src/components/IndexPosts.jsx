@@ -30,8 +30,8 @@ export default function({response, onPageChange}){
             {response?.posts?.length === 0 && 'Non ci sono Post!'}
             {response?.posts?.length > 0 && 
                 response.posts.map((p, index) => (
-                <Link>
                     <div key={`listElement${index}`} className="postCard" >
+                        <Link to={`/posts/${p.slug}`}>
                         { <>
                         
                             <h2>{p.title}</h2>
@@ -46,8 +46,8 @@ export default function({response, onPageChange}){
                             <MdDeleteForever/>
                         </button>
                         </>}
+                        </Link>
                     </div>
-                </Link>
                 ))
             }
         </div>
