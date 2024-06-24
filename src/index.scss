@@ -144,3 +144,22 @@ a{
   color: inherit;
   text-decoration: none;
 }
+
+.showPage{
+  width: 70%;
+  margin: 10px auto;
+  p{
+    margin-bottom: 15px;
+  }
+  figure{
+    margin: 0 auto;
+    width: 70%;
+    img{
+      width: 100%;
+    }
+  }
+  h1{
+    margin-bottom: 10px;
+  }
+  
+}

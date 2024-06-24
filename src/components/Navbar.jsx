@@ -18,7 +18,7 @@ export default function(){
                 <menu>
                     {urlPages.map( ({label, href}, i) => (
                         <li key={`urlPage${i}`}>
-                            <NavLink to={href}>{label}</NavLink>
+                            <NavLink to={href} end>{label}</NavLink>
                         </li>
                     ))}
                 </menu>
