@@ -109,6 +109,7 @@ button{
 }
 
 .paginator{
+  padding: 20px;
   display: flex;
   gap: .5rem;
   align-items: center;
@@ -116,5 +117,25 @@ button{
   button{
     width: 18px;
     height: 18px;
+  }
+}
+
+.navbar{
+  padding: 20px;
+  font-size: 22px;
+  menu{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: darkgreen;
+      &.active{
+        opacity: .5;
+        pointer-events: none;
+      }
+    }
   }
 }

@@ -7,7 +7,6 @@ export default function({ categories, tags, onCreate}){
     // const categories = ["Food", "Drink", "Travel", "Sports", "Other"];
     // const tags = [ "travel", "food", "fitness", "photography", "technology", "health", "fashion", "lifestyle", "nature", "art"];
 
-    const [list, setList] = useState([]);
     const [published, setPublished] = useState(false);
 
     const initialData = {
